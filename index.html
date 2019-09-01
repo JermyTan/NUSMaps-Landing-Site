@@ -101,7 +101,7 @@
                     <iframe
                       width="286.22"
                       height="503.77"
-                      src="https://xd.adobe.com/embed/33d4d30f-db23-4e84-6e76-8127343c3bf5-45e5/?fullscreen"
+                      src="https://xd.adobe.com/embed/b1249515-dec0-4440-59e2-ea1b80714484-c715/?fullscreen"
                       frameborder="0"
                       allowfullscreen
                     ></iframe>
@@ -129,12 +129,88 @@
               mobile device!
             </p>
             <div class="badges">
-              <a class="badge-link" href="#"
+              <a
+                href="#"
+                class="badge-link"
+                data-toggle="modal"
+                data-target="#emailModal"
                 ><img src="img/google-play-badge.svg" alt=""
               /></a>
-              <a class="badge-link" href="#"
+              <a
+                href="#"
+                class="badge-link"
+                data-toggle="modal"
+                data-target="#emailModal"
                 ><img src="img/app-store-badge.svg" alt=""
               /></a>
+              <div
+                class="modal fade"
+                id="emailModal"
+                role="dialog"
+                aria-labelledby="myModalLabel"
+                aria-hidden="true"
+              >
+                <div
+                  class="modal-dialog modal-notify modal-warning"
+                  role="document"
+                >
+                  <!--Content-->
+                  <div class="modal-content">
+                    <!--Header-->
+                    <div class="modal-header text-center">
+                      <h4
+                        class="modal-title white-text w-100 font-weight-bold py-2"
+                      >
+                        Provide us your email to receive a free exclusive NUS
+                        food guide!
+                      </h4>
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                        onclick="document.getElementById('form2').value=''"
+                      >
+                        <span aria-hidden="true" class="white-text"
+                          >&times;</span
+                        >
+                      </button>
+                    </div>
+
+                    <!--Body-->
+                    <div class="modal-body">
+                      <div class="md-form">
+                        <i class="fas fa-envelope prefix grey-text"></i>
+                        <input
+                          type="email"
+                          id="form2"
+                          class="form-control validate"
+                          placeholder="Email"
+                        />
+                      </div>
+                    </div>
+
+                    <!--Footer-->
+                    <div class="modal-footer justify-content-center">
+                      <button
+                        type="button"
+                        data-dismiss="modal"
+                        onclick="document.getElementById('form2').value=''"
+                      >
+                        Send me a copy!
+                      </button>
+                      <button
+                        type="button"
+                        data-dismiss="modal"
+                        onclick="document.getElementById('form2').value=''"
+                      >
+                        No, only download the app.
+                      </button>
+                    </div>
+                  </div>
+                  <!--/.Content-->
+                </div>
+              </div>
             </div>
           </div>
         </div>
